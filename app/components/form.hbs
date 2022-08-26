@@ -1,0 +1,50 @@
+<form class='form-group needs-validation' novalidate>
+  <div class='container'>
+    <div class='row'>
+      <label>House Number</label>
+      <Input
+        @value={{this.number}}
+        placeholder='House Number'
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+        required=''
+        type='number'
+      /></div>
+    <div class='row'><label>Place</label>
+      <Input
+        required=''
+        @value={{this.place}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row'><label>No of Guest</label>
+      <Input
+        @value={{this.no_of_guest}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row'><label>Rating</label>
+      <Input
+        @value={{this.rating}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row'><label>Rent</label>
+      <Input
+        @value={{this.rent}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row'><label>Image</label>
+      <Input
+        placeholder='Image link'
+        @value={{this.src}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row'><label>Description</label>
+      <Textarea
+        @value={{this.description}}
+        class='bg-warning bg-opacity-10 border_style form-control text-primary'
+      /></div>
+    <div class='row d-flex justify-content-center'>
+      <button
+        type='submit'
+        class='btn btn-danger mt-5 col-4'
+        {{on 'click' this.create}}
+      >submit</button></div></div>
+</form>

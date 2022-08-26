@@ -1,0 +1,22 @@
+{{page-title 'Bookings'}}
+<div class='container'>
+  <table class='table border mt-5'>
+    <thead>
+      <th scope='col' class='border text-center'>#</th>
+      <th scope='col' class='border text-center'>House Number</th>
+      <th scope='col' class='border text-center'>Full Name</th>
+      <th scope='col' class='border text-center'>Email</th>
+      <th scope='col' class='border text-center'>Phone No</th>
+    </thead>
+    <tbody>
+      {{#each @model as |detail|}}
+        <tr>
+          <td class='border text-center'>{{detail.tableNumber}}</td>
+          <td class='border text-center'>{{detail.houseNumber}}</td>
+          <td class='border text-center'>{{detail.fullName}}</td>
+          <td class='border text-center'>{{detail.email}}</td>
+          <td class='border text-center'>{{detail.phoneNumber}}</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

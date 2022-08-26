@@ -1,0 +1,44 @@
+.color_gradient {
+  background-image: linear-gradient(to right, #7986CB, #3f4f9c, #7986CB);
+}
+
+.form_width {
+  width: 25%;
+}
+
+.border_style {
+  border: 1px solid rgb(147, 139, 139);
+}
+
+.font_style {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.background_color {
+  background-color: rgb(158, 223, 246);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(226, 193, 193);
+}
+
+.progress {
+  
+  --bs-progress-bar-animation-timing: 100s linear infinite;
+  --bs-progress-bar-transition: 20% 200s ease;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,9 @@
+{{page-title 'Index'}}
+<div class='d-flex justify-content-center' style='width: 100%;'>
+  <div style='width:40%;overflow:scroll;height:100vh'>
+    {{#each @model as |detailcontent|}}
+      <Cardview @detail={{detailcontent}} />
+    {{/each}}
+  </div>
+  {{outlet}}
+</div>

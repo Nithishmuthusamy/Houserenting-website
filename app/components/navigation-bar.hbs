@@ -1,0 +1,31 @@
+<nav
+  class='navbar navbar-expand-lg d-lg-flex justify-content-lg-end bg-light position-sticky color_gradient sticky-top apple'
+>
+  <button
+    class='navbar-toggler'
+    type='button'
+    data-bs-toggle='collapse'
+    data-bs-target='#menu'
+    aria-controls='menu'
+    aria-expanded='false'
+    aria-label='Toggle navigation'
+  >
+    <span class='navbar-toggler-icon'></span>
+  </button>
+  <div class='collapse navbar-collapse' id='menu' style='justify-content: end;'>
+    <ul class='navbar-nav'>
+      <li class='nav-item'><LinkTo
+          class='nav-link'
+          @route='index'
+        >Home</LinkTo></li>
+      <li class='nav-item'><LinkTo
+          class='nav-link'
+          @route='bookings'
+        >BookedList</LinkTo></li>
+      <li class='nav-item'><LinkTo
+          class='nav-link'
+          @route='addlist'
+        >AddList</LinkTo></li>
+    </ul>
+  </div>
+</nav>

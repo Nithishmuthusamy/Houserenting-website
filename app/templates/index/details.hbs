@@ -1,0 +1,20 @@
+{{page-title 'Details'}}
+{{outlet}}
+<div
+  class='w-60 child_class'
+  style='width: 60%;text-align:center;overflow:scroll;height:100vh'
+>
+  <div style='width:100%;' class='mt-5'>
+    <img src={{this.model.src}} style='width:90%;' />
+    <strong><div class='mt-3 text-start ms-1'>Description</div></strong>
+    <p class='text-start p-3'>{{this.model.description}}</p>
+    <span>
+      <button
+        class='btn btn-danger' type="button" {{on 'click' (fn this.bookbutton this.model)}}
+      >Book</button>
+      <button
+        class='btn btn-danger' type="button" {{on 'click' (fn this.deletebutton this.model)}}
+      >Delete</button>
+    </span>
+  </div>
+</div>

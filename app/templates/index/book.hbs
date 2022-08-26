@@ -1,0 +1,54 @@
+{{page-title 'Book'}}
+<div class='w-60 child_class mt-5' style='width: 60%;'>
+  <h1 class='mt-2 text-center font_style'>Booking..</h1>
+  <div
+    class='container d-flex justify-content-start border border-2 rounded mt-5 p-5 w-50 border_style'
+  >
+    <form class='form-group needs-validation' novalidate>
+      <div class='container'>
+        <div class='row'>
+          <label>House Number</label>
+          <Input
+            @value={{@model.number}}
+            placeholder='House Number'
+            class='bg-warning bg-opacity-10 border_style form-control text-primary'
+            required=''
+            type='number'
+            readonly
+          /></div>
+        <div class='row'><label>Full Name</label>
+          <Input
+            @value={{this.fullname}}
+            placeholder='Full Name'
+            class='bg-warning bg-opacity-10 border_style form-control text-primary'
+          /></div>
+        <div class='row'><label>Email</label>
+          <Input
+            @value={{this.email}}
+            class='bg-warning bg-opacity-10 border_style form-control text-primary'
+          /></div>
+        <div class='row'><label>Phone No</label>
+          <Input
+            @value={{this.phonenumber}}
+            class='bg-warning bg-opacity-10 border_style form-control text-primary'
+          /></div>
+
+        <div class='row d-flex justify-content-center'>
+          <button
+            class='me-5'
+            {{on 'click' this.book}}
+            type='submit'
+            class='btn btn-danger mt-5 col-4'
+            data-bs-toggle='modal'
+            data-bs-target='#Modal_notify'
+          >Book</button>
+          <button
+            {{on 'click' this.next}}
+            type='submit'
+            class='btn btn-danger mt-5 col-4'
+          >Cancel</button></div></div>
+    </form>
+  </div>
+</div>
+
+<Modal @detail={{@model}} />
